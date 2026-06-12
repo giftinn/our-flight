@@ -72,7 +72,6 @@ const flightSection = document.querySelector(".flight-section");
 const plane = document.getElementById("plane");
 const photos = document.querySelectorAll(".flight-photo");
 const endingScreen = document.getElementById("endingScreen");
-const restartBtn = document.getElementById("restartFlight");
 
 
 if(qrBox){
@@ -224,9 +223,4 @@ function fadeInAudio(audio, targetVolume = 1, duration = 1500) {
     }
   }, 50);
 }
-
-if (restartBtn) {
-  restartBtn.addEventListener("click", () => {
-    location.reload();
-  });
 }
